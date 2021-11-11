@@ -1,5 +1,6 @@
+windiw.addEventListener("onload", function(){
+
 const find = (selector) => document.querySelector(selector);
-const findAll = (selector) => document.querySelectorAll(selector);
 
 const sliderWrapper = find("#slider");
 const sliderRow = find("#slider__row");
@@ -117,3 +118,5 @@ for (let i = 1; i <= slides.length; i++) {
 }
 
 updateRadio();  
+
+});
