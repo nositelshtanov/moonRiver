@@ -1,4 +1,4 @@
-document.addEventListener("load", function(){
+window.addEventListener("load", function(){
 
 const find = (selector) => document.querySelector(selector);
 
