@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon River</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="first-section">
+        <header class="main-header">
+            <div class="container main-header__wrapper">
+                <div class="main-header__logo">
+                    <a href=""><img src="img/logo1.svg" alt="logo"></a>
+                </div>
+                <nav>
+                    <div class="main-header__buttons">
+                        <a href="#likes">
+                            <img src="img/likes.svg" alt="icons">
+                        </a>
+                        <a href="#user">
+                            <img src="img/user.svg" alt="icons">
+                        </a>
+                        <a href="#block">
+                            <img src="img/block.svg" alt="icons">
+                        </a>
+                    </div>
+                    <div class="main-header__menu">
+                        <a id="header-menu-icon" href="#menu">
+                            <span></span><span></span><span></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="first-section__content" id="first-section__app">
+            
+        </div>
+    </section>
+    <div class="sections">
+        <section class="sections__first">
+            <div class="sections__text">
+                <a class="anchor-link" href="#">Перейти в раздел</a>
+                <h2><a href="#">Для мужчин</a></h2>
+                <div class="sections__devider"></div>
+            </div>
+            <div class="sections__bg first"></div>
+        </section>
+        <section class="sections__second">
+            <div class="sections__text">
+                <a class="anchor-link" href="#">Перейти в раздел</a>
+                <h2><a href="#">Для женщин</a></h2>
+                <div class="sections__devider"></div>
+            </div>
+            <div class="sections__bg second"></div>
+        </section>
+    </div>
+    <section class="map-section">
+        <div class="container map-section__flex">
+            <div class="map-section__text">
+                <h3>Найди бутик<br> около себя</h3>
+                <p>Найдите свой адрес и все равно ничего не узнайте<br> о ближайших бутиках к вам,<br> потому что нашего магазина не существует</p>
+                <form action="" class="map-section__form">
+                    <input type="text" name="text" class="map-section__input" placeholder="Адрес">
+                    <button type="submit"><img src="img/Line.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="map-wrapper">
+                <iframe class="map2" src="https://yandex.ru/map-widget/v1/?um=constructor%3A760d05cd42a2896ee9c8fbec2559e47d108753c3b72237f107e8485dfeeb82b9&amp;source=constructor" width="829" height="604" frameborder="0"></iframe>
+                <div class="glass"></div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__column1">
+            <a href="" class="products__product">
+                <img src="img/ring1.png" alt="">
+                <div class="text">
+                    <h4>КОЛЬЦО JOW’S, CARTIER</h4>
+                    <p class="description">Белое золото, бриллианты</p>
+                    <p class="price">674 000 ₽</p>
+                </div>
+            </a>
+            <a href="" class="products__product">
+                <img src="img/ring2.png" alt="">
+                <div class="text">
+                    <h4>КОЛЬЦО CROIX, CARTIER</h4>
+                    <p class="description">Желтое, белое, розовое золото</p>
+                    <p class="price">432 000 ₽</p>
+                </div>
+            </a>
+        </div>
+        <a href="" class="products__center">
+            <div class="center-bg"></div>
+            <div class="text">
+                <h4>КОЛЬЕ ETOILE, HUBLOT</h4>
+                <p class="description">Желтое, белое, розовое золото</p>
+                <p class="price">539 000 ₽</p>
+            </div>
+        </a>
+        <div class="products__column2">
+            <a href="" class="products__product">
+                <img src="img/ring3.png" alt="">
+                <div class="text">
+                    <h4>СЕРЬГИ MOON, HUBLOT</h4>
+                    <p class="description">Желтое золото, сапфир</p>
+                    <p class="price">498 000 ₽</p>
+                </div>
+            </a>
+            <a href="" class="products__product">
+                <img src="img/ring4.png" alt="">
+                <div class="text">
+                    <h4>СЕРЬГИ WIN, BLANCPAIN</h4>
+                    <p class="description">Желтое золото, жемчуг</p>
+                    <p class="price">398 000 ₽</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="slider-section">
+        <div class="container">
+            <h3>Мы<br> в социальных сетях</h3>
+        </div>
+        <div class="slider-wrapper" id="slider">
+            <div class="slider-wrapper__row" id="slider__row">
+                <img src='https://images.unsplash.com/photo-1636189416039-73d6a1bb3192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzczNw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+                <img src="img/slide2.png" alt="">
+                <img src="https://images.unsplash.com/photo-1635342672859-647572f4a691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzY1Mw&ixlib=rb-1.2.1&q=80&w=400" alt="">
+                <img src="img/slide3.png" alt="">
+                <img src='https://images.unsplash.com/photo-1636272131852-9d42bb76a990?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzUxMw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+                <img src="img/slide4.png" alt="">
+                <img src='https://images.unsplash.com/photo-1636450985166-d87829cdb251?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzUxMw&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+                <img src='https://images.unsplash.com/photo-1635807012936-540d20f59e34?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzcwOQ&ixlib=rb-1.2.1&q=85' alt=''>
+                <img src='https://images.unsplash.com/photo-1635961099150-ce851800a1a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjYyNzcyNg&ixlib=rb-1.2.1&q=80&w=400' alt=''>
+            </div>
+            <div class="container">
+                <div class="slider-wrapper__tools">
+                    <div class="slider-wrapper__icons">
+                        <div class="icon"><a href=""><i class="fab fa-facebook-f"></a></i></div>
+                        <div class="icon"><a href=""><i class="fab fa-instagram"></a></i></div>
+                    </div>
+                    <div class="slider-wrapper__btns" id="btns">
+                        <button type="button" class="left" id="left"><img src="img/left.svg" alt=""></button>
+                        <div class="radio-btns" id="radio-btns">
+
+                        </div>
+                        <button type="button" class="right" id="right"><img src="img/right.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="contacts">
+        <div class="contacts__bg">
+            <img src="img/woman3.png" alt="">
+        </div>
+        <div class="contacts__text">
+            <div class="text-wrapper">
+                <div class="block-tel">
+                    <h3>телефон флагманского магазина</h3>
+                    <div class="telephone">
+                        <a href="tel:+7800456456">+7 800 456 456</a>
+                    </div>
+                </div>
+                <div class="news">
+                    <h3>подпишитесь на новости</h3>
+                    <form action="">
+                        <input type="text" placeholder="Введите E-mail">
+                        <button type="submit"><img src="img/arrowblack.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="">РАБОТА В КОМПАНИИ</a></li>
+                    <li><a href="">УСЛОВИЯ ПОЛЬЗОВАНИЯ</a></li>
+                    <li><a href="">ВЫХОДНЫЕ ДАННЫЕ</a></li>
+                    <li><a href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+                    <li><a href="">КАРТА САЙТА</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__row">
+                <div class="logo-container">
+                    <a href=""><img src="img/logo2.svg" alt=""></a>
+                </div>
+                <div class="main-footer__contacts">
+                    <div class="tel">
+                        <h4>Телефон горячей линии</h4>
+                        <div class="telephone"><a href="tel:+78004564562">+7 800 456 456</a></div>
+                        <div class="social-icons">
+                            <div class="icon"><a href=""><i class="fab fa-facebook-f"></a></i></div>
+                            <div class="icon"><a href=""><i class="fab fa-instagram"></a></i></div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h4>Подпишитесь на новости</h4>
+                        <form action="post" name="post-email">
+                            <input type="email" name="email" id="email" placeholder="e-mail">
+                            <button type="submit"><img src="img/Line.svg" alt=""></button>
+                        </form>
+                        <div class="stores">
+                            <a href=""><img src="img/apple-store-badge 1.png" alt=""></a>
+                            <a href=""><img src="img/googleplay.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main-section-app.js" type="module"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

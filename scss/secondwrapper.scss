@@ -1,0 +1,241 @@
+.second-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 1;
+    transition: opacity 1s;
+
+    &.hide {
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    .menu-navigation {
+
+        &__header {
+            background-color:#2F2F2F;
+            height: 75px;
+            margin-top: 55px;
+
+            .first-navigation {
+                height: 100%;
+
+                ul {
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    column-gap: 50px;
+                    flex-wrap: wrap;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 2px solid transparent;
+
+                        a {
+                            color: white;
+                            font-size: 1.6rem;
+                            line-height: 2rem;
+                            letter-spacing: .05em;
+                        }
+
+                        &:hover {
+                            border-bottom: 2px solid white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .second-navigation {
+            margin-top: 70px;
+            &__row {
+                display: flex;
+                justify-content: flex-start;
+                
+                .nav-block {
+                    flex-basis: 200px;
+                    color: white;
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        line-height: 2rem;
+                        letter-spacing: .05em;
+                        padding-bottom: 30px;
+                    }
+
+                    li a {
+                        font-size: 1.8rem;
+                        line-height: 2.3rem;
+                        letter-spacing: .05em;
+                        color: inherit;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                    }
+
+                    .special-link {
+                        color: $pricecolor;
+                        font-size: 1.6rem;
+                        line-height: 2.1rem;
+                        @extend %segoe;
+                    }
+                }
+            }
+
+            &__line {
+                height: 2px;
+                background-color: #2F2F2F;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    footer.container {
+        max-width: 1120px;
+    }
+
+    .menu-footer {
+        min-height: 270px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        width: 100%;
+
+        &__new-collection {
+            height: 100%;  width: 750px;
+            background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/backMenu.png), ;
+            background-size: cover, cover;
+            background-repeat: no-repeat, no-repeat;
+
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .notice1 ,.notice2, .notice3 {
+                color: white;
+
+                a {
+                    color: white;
+                }
+            }
+
+            .notice1 {
+                align-self: flex-start;
+                font-size: 1.8rem;
+                line-height: 2.3rem;
+                letter-spacing: .05em;
+                padding-left: 30px;
+            }
+
+            .notice2 {
+                font-family: $forum;
+                font-size: 4.8rem;
+                line-height: 5.2rem;
+                letter-spacing: .03em;
+            }
+
+            .notice3 {
+                align-self: flex-end;
+                font-size: 1.8rem;
+                line-height: 2.3rem;
+                letter-spacing: .05em;
+                display: flex;
+                align-items: center;
+                column-gap: 25px;
+                padding-right: 30px;
+
+                button {
+                    height: 17px; width: 31px;
+                }
+            }
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+
+            h4 {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                letter-spacing: .05em;
+                color: white;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .block1 {
+                .tel a{
+                    color: $signature;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                    line-height: 2.3rem;
+                    margin-bottom: 15px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .social-icons {
+                    display: flex;
+                    column-gap: 20px;
+                    padding-top: 15px;
+
+                    .icon {
+                        border-radius: 50%;
+                        height: 35px; width: 35px;
+                        background-color: #DADADA;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            font-size: 2rem;
+                            color: $mainblack;
+                        }
+                    }
+                }
+            }
+
+            .block2 {
+                form {
+                    width: 280px; height: 35px;
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 2px solid white;
+                    margin-bottom: 15px;
+
+                    input {
+                        flex-grow: 1;
+                        color: $signature;
+                        font-size: 1.8rem;
+                        line-height: 2.3rem;
+                    }
+
+                    button {
+                        transform: translateX(10px);
+                        cursor: pointer;
+                    }
+                }
+
+                .stores {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
