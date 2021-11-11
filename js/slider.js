@@ -1,4 +1,4 @@
-window.addEventListener("onload", function(){
+document.addEventListener("load", function(){
 
 const find = (selector) => document.querySelector(selector);
 
