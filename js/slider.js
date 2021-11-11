@@ -1,4 +1,4 @@
-window.addEventListener("load", function(){
+window.onload = function(){
 
 const find = (selector) => document.querySelector(selector);
 
@@ -119,4 +119,4 @@ for (let i = 1; i <= slides.length; i++) {
 
 updateRadio();  
 
-});
+};
